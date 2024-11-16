@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure Address Encryption</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Secure Address Encryption</h1>
+        <div id="root"></div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"></script>
+    <script src="js/encryption.js"></script>
+    <script type="module">
+        import { createRoot } from 'react-dom/client';
+        import EncryptionForm from './components/EncryptionForm';
+
+        const container = document.getElementById('root');
+        const root = createRoot(container);
+        root.render(<EncryptionForm />);
+    </script>
+</body>
+</html>
